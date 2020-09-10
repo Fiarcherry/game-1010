@@ -22,7 +22,7 @@
     <Grid>
         <Button x:Name="exitButton" Template="{StaticResource Button}" Margin="396,10,2,0" VerticalAlignment="Top" Height="60" Width="60" IsTabStop="False" Click="ExitButton_Click">
             <Button.Background>
-                <ImageBrush ImageSource="ExitButtonBackgroundImage.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="/Images/ExitButtonBackgroundImage.png" Stretch="Uniform"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">
@@ -60,11 +60,11 @@
                 </EventTrigger>
             </Button.Triggers>
         </Button>
-        <Image x:Name="cupPictureBox" Margin="10,67,10,0" Source="CupImage.png" MaxHeight="86" VerticalAlignment="Top"/>
+        <Image x:Name="cupPictureBox" Margin="10,67,10,0" Source="/Images/CupImage.png" MaxHeight="86" VerticalAlignment="Top"/>
         <Label x:Name="recordScoreLabel" Content="0" Margin="10,158,10,0" HorizontalAlignment="Center" Foreground="#FF5BBDE2" Width="492" HorizontalContentAlignment="Center" MaxWidth="472" MaxHeight="49" Height="48" VerticalAlignment="Top"/>
         <Button x:Name="playButton" Template="{StaticResource Button}" Height="140" Width="300" BorderThickness="0" Click="PlayButton_Click" IsTabStop="False">
             <Button.Background>
-                <ImageBrush ImageSource="PlayButtonBackgroundImage.png"/>
+                <ImageBrush ImageSource="/Images/PlayButtonBackgroundImage.png"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">
@@ -105,6 +105,6 @@
                 </EventTrigger>
             </Button.Triggers>
         </Button>
-        <Image x:Name="tenTenPictureBox" Margin="10,0,10,67" Source="TentenImage.png" MaxHeight="86" Height="82" VerticalAlignment="Bottom"/>
+        <Image x:Name="tenTenPictureBox" Margin="10,0,10,67" Source="/Images/TentenImage.png" MaxHeight="86" Height="82" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>TentenImage.ico</ApplicationIcon>
+    <ApplicationIcon>Images\TentenImage.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -73,11 +73,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="GameForm.xaml.cs">
+    <Compile Include="Forms\GameForm.xaml.cs">
       <DependentUpon>GameForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RecordScore.cs" />
-    <Page Include="MainMenuForm.xaml">
+    <Compile Include="Classes\RecordScore.cs" />
+    <Page Include="Forms\MainMenuForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -85,21 +85,21 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainMenuForm.xaml.cs">
+    <Compile Include="Forms\MainMenuForm.xaml.cs">
       <DependentUpon>MainMenuForm.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="GameForm.xaml">
+    <Page Include="Forms\GameForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PauseGameForm.xaml">
+    <Page Include="Forms\PauseGameForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PauseGameForm.xaml.cs">
+    <Compile Include="Forms\PauseGameForm.xaml.cs">
       <DependentUpon>PauseGameForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -128,28 +128,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="CupImage.png" />
+    <Resource Include="Images\CupImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <SplashScreen Include="TentenImage.png" />
+    <SplashScreen Include="Images\TentenImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="PauseButtonBackgroundImage.png" />
+    <Resource Include="Images\PauseButtonBackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="PlayButtonBackgroundImage.png" />
+    <Resource Include="Images\PlayButtonBackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GoToGameButtonBackgroundImage.png" />
+    <Resource Include="Images\GoToGameButtonBackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GoToMainButtonBackgroundImage.png" />
+    <Resource Include="Images\GoToMainButtonBackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ExitButtonBackgroundImage.png" />
+    <Resource Include="Images\ExitButtonBackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TentenImage.ico" />
+    <Resource Include="Images\TentenImage.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

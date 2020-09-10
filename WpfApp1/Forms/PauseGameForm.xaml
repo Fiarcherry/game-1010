@@ -23,7 +23,7 @@
     <Grid>
         <Button x:Name="goToMainButton" Template="{StaticResource Button}" Height="100" Width="100" BorderThickness="0" IsTabStop="False" Margin="146,0,0,201" VerticalAlignment="Center" Click="GoToMainButton_Click">
             <Button.Background>
-                <ImageBrush ImageSource="GoToMainButtonBackgroundImage.png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="/Images/GoToMainButtonBackgroundImage.png" Stretch="UniformToFill"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">
@@ -66,7 +66,7 @@
         </Button>
         <Button x:Name="goToGameButton" Template="{StaticResource Button}" Height="100" Width="100" BorderThickness="0" IsTabStop="False" Grid.Column="1" Margin="0,0,146,201" VerticalAlignment="Center" Click="GoToGameButton_Click">
             <Button.Background>
-                <ImageBrush ImageSource="GoToGameButtonBackgroundImage.png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="/Images/GoToGameButtonBackgroundImage.png" Stretch="UniformToFill"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">
@@ -109,7 +109,7 @@
         </Button>
         <Button x:Name="returnToGameButton" Template="{StaticResource Button}" Height="100" Width="100" BorderThickness="0" IsTabStop="False" Margin="0,91,0,0" Click="ReturnToGameButton_Click">
             <Button.Background>
-                <ImageBrush ImageSource="PlayButtonBackgroundImage.png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="/Images/PlayButtonBackgroundImage.png" Stretch="UniformToFill"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">

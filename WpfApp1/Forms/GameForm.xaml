@@ -31,12 +31,12 @@
             <ColumnDefinition Width="438"/>
             <ColumnDefinition Width="75"/>
         </Grid.ColumnDefinitions>
-        <Image Name="cupPictureBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,10,355,0" Source="CupImage.png" Height="55" VerticalAlignment="Top"/>
+        <Image Name="cupPictureBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,10,355,0" Source="/Images/CupImage.png" Height="55" VerticalAlignment="Top"/>
         <Label Name="recordScoreLabel" Grid.Row="0" Grid.Column="1" Content="0" Margin="88,16,74,0" VerticalAlignment="Top" Foreground="#FF5BBDE2" MaxWidth="274"/>
         <Label Name="scoreLabel" Grid.Row="0" Grid.Column="1" Content="0" Margin="0,36,0,0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" MaxWidth="438" Width="438" Foreground="#FFED7D31"/>
         <Button Name="pauseButton" Grid.Row="0" Grid.Column="1" Template="{StaticResource Button}" Margin="370,10,0,0" VerticalAlignment="Top" Height="40" Width="40" IsTabStop="False" Click="PauseButton_Click">
             <Button.Background>
-                <ImageBrush ImageSource="PauseButtonBackgroundImage.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="/Images/PauseButtonBackgroundImage.png" Stretch="Uniform"/>
             </Button.Background>
             <Button.Triggers>
                 <EventTrigger RoutedEvent="MouseEnter">
