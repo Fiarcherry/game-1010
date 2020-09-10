@@ -1,0 +1,110 @@
+﻿<Window x:Class="WpfApp1.MainMenuForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="700" Width="594" WindowStartupLocation="CenterScreen" FontSize="24" MinHeight="600" MinWidth="400" WindowStyle="None" ResizeMode="NoResize" >
+
+    <Window.Resources>
+
+        <ControlTemplate TargetType="Button" x:Key="Button">
+            <Grid>
+                <Border CornerRadius="10"
+                    Background="{TemplateBinding Background}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Height="{TemplateBinding Height}"
+                    Width="{TemplateBinding Width}"/>
+            </Grid>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="exitButton" Template="{StaticResource Button}" Margin="396,10,2,0" VerticalAlignment="Top" Height="60" Width="60" IsTabStop="False" Click="ExitButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="ExitButtonBackgroundImage.png" Stretch="Uniform"/>
+            </Button.Background>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard TargetName="exitButton">
+                                <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                                 Duration="0:0:0.5" 
+                                                 To="65" 
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                                                 Duration="0:0:0.5" 
+                                                 To="65" 
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever">
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                                 Duration="0:0:0.2" 
+                                                 To="60"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height" 
+                                                 Duration="0:0:0.2"
+                                                 To="60"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+        <Image x:Name="cupPictureBox" Margin="10,67,10,0" Source="CupImage.png" MaxHeight="86" VerticalAlignment="Top"/>
+        <Label x:Name="recordScoreLabel" Content="0" Margin="10,158,10,0" HorizontalAlignment="Center" Foreground="#FF5BBDE2" Width="492" HorizontalContentAlignment="Center" MaxWidth="472" MaxHeight="49" Height="48" VerticalAlignment="Top"/>
+        <Button x:Name="playButton" Template="{StaticResource Button}" Height="140" Width="300" BorderThickness="0" Click="PlayButton_Click" IsTabStop="False">
+            <Button.Background>
+                <ImageBrush ImageSource="PlayButtonBackgroundImage.png"/>
+            </Button.Background>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard TargetName="playButton">
+                                <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                                 Duration="0:0:0.5" 
+                                                 To="310" 
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height"
+                                                 Duration="0:0:0.5" 
+                                                 To="150" 
+                                                 AutoReverse="True"
+                                                 RepeatBehavior="Forever">
+                                    <DoubleAnimation.EasingFunction>
+                                        <PowerEase EasingMode="EaseOut"/>
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                                 Duration="0:0:0.2" 
+                                                 To="300"/>
+                                <DoubleAnimation Storyboard.TargetProperty="Height" 
+                                                 Duration="0:0:0.2"
+                                                 To="140"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+        <Image x:Name="tenTenPictureBox" Margin="10,0,10,67" Source="TentenImage.png" MaxHeight="86" Height="82" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
